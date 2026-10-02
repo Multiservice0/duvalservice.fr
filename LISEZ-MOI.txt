@@ -1,0 +1,8 @@
+DUVAL PÈRE ET FILS — SITE WEB
+
+1. Envoyez index.html, style.css et script.js à la racine de votre hébergement / dépôt.
+2. Remplacez 07 56 83 59 02 et +33756835902 par votre vrai numéro.
+3. Remplacez contact@duvalservice.fr par votre vraie adresse e-mail.
+4. Le site est responsive : PC, tablette et mobile.
+5. Les photos sont chargées depuis Unsplash. Pour un site pro définitif, remplacez-les par vos propres photos de chantiers.
+6. Le nom de domaine duvalservice.fr doit ensuite pointer vers l'hébergement choisi (OVH ou GitHub Pages).
