@@ -1,32 +1,23 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 
 <head>
 
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <meta name="theme-color" content="#061b2e">
 
 <title>Duval Père et Fils | Plomberie • Chauffage • Serrurerie</title>
 
-<meta
-  name="description"
-  content="Duval Père et Fils : plomberie, chauffage, serrurerie, salle de bains, dépannage et rénovation."
->
+<meta name="description" content="Duval Père et Fils : plomberie, chauffage, serrurerie, salle de bains, dépannage et rénovation. Artisan plombier depuis 2000.">
 
 <style>
 
-/* =========================================================
+/* ============================================
    DUVAL PÈRE ET FILS
    SITE COMPLET
-   ========================================================= */
-
-
-/* =========================
-   RÉGLAGES GÉNÉRAUX
-========================= */
+   ============================================ */
 
 * {
   box-sizing: border-box;
@@ -52,10 +43,9 @@ img {
   max-width: 100%;
 }
 
-
-/* =========================
+/* ============================================
    MENU DU HAUT
-========================= */
+   ============================================ */
 
 .topbar {
   min-height: 84px;
@@ -70,11 +60,6 @@ img {
   z-index: 1000;
   box-shadow: 0 3px 15px #00000033;
 }
-
-
-/* =========================
-   LOGO
-========================= */
 
 .brand {
   display: flex;
@@ -118,11 +103,6 @@ img {
   letter-spacing: 1.3px;
 }
 
-
-/* =========================
-   NAVIGATION
-========================= */
-
 .topbar nav {
   display: flex;
   gap: 27px;
@@ -144,6 +124,7 @@ img {
   background: #9c001b;
   padding: 13px 20px;
   font-weight: bold;
+  white-space: nowrap;
 }
 
 .menu {
@@ -155,10 +136,217 @@ img {
   cursor: pointer;
 }
 
+/* ============================================
+   NOUVELLE SECTION
+   POURQUOI NOUS FAIRE CONFIANCE
+   ============================================ */
 
-/* =========================
-   GRANDE BANNIÈRE
-========================= */
+.confiance-accueil {
+  background: #ffffff;
+  padding: 48px 4% 32px;
+}
+
+.confiance-introduction {
+  text-align: center;
+  max-width: 950px;
+  margin: 0 auto 35px;
+}
+
+.confiance-introduction h2 {
+  font-family: Georgia, serif;
+  font-size: 35px;
+  color: #073252;
+  margin: 0 0 15px;
+  line-height: 1.25;
+}
+
+.confiance-introduction h2::after {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 4px;
+  background: #bc001d;
+  margin: 18px auto;
+}
+
+.confiance-introduction p {
+  font-size: 17px;
+  color: #555;
+  line-height: 1.7;
+}
+
+.confiance-cartes {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.confiance-carte {
+  background: white;
+  border-radius: 8px;
+  padding: 30px 17px;
+  text-align: center;
+  box-shadow: 0 4px 23px #00000013;
+  border: 1px solid #f0f0f0;
+  transition: 0.2s;
+}
+
+.confiance-carte:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 9px 25px #00000020;
+}
+
+.confiance-icone {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background: #fcebed;
+  color: #b00020;
+  display: grid;
+  place-items: center;
+  font-size: 40px;
+  margin: 0 auto 23px;
+}
+
+.confiance-carte h3 {
+  color: #073252;
+  font-size: 19px;
+  margin: 0 0 20px;
+}
+
+.confiance-carte p {
+  color: #4c4c4c;
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ============================================
+   NOUVELLE SECTION ASSURANCES
+   ============================================ */
+
+.assurances-section {
+  background: #edf5fb;
+  padding: 38px 4%;
+}
+
+.assurances-conteneur {
+  max-width: 1400px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 30px;
+  align-items: center;
+}
+
+.assurances-texte h2 {
+  color: #073252;
+  font-size: 33px;
+  font-weight: 800;
+  margin: 0 0 20px;
+}
+
+.assurances-texte h2 span {
+  color: #b00020;
+}
+
+.assurances-texte h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #b00020;
+  margin-top: 16px;
+}
+
+.assurances-texte p {
+  color: #444;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.assurances-telephone {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: #b00020;
+  color: white;
+  font-size: 21px;
+  font-weight: bold;
+  padding: 16px 25px;
+  border-radius: 40px;
+  margin-top: 20px;
+  box-shadow: 0 6px 20px #00000020;
+}
+
+.assurances-telephone:hover {
+  background: #061b2e;
+}
+
+.assurances-logos {
+  background: white;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px #00000012;
+}
+
+.assurances-logos h3 {
+  text-align: center;
+  color: #073252;
+  font-size: 18px;
+  margin: 0 0 22px;
+}
+
+.assurances-grille {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.assurance-logo {
+  min-height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 8px;
+  border: 1px solid #eeeeee;
+  border-radius: 7px;
+  background: #ffffff;
+  font-weight: 800;
+  font-size: 15px;
+  letter-spacing: -0.3px;
+}
+
+.assurance-logo:nth-child(4n+1) {
+  color: #07478a;
+}
+
+.assurance-logo:nth-child(4n+2) {
+  color: #c20023;
+}
+
+.assurance-logo:nth-child(4n+3) {
+  color: #008b7c;
+}
+
+.assurance-logo:nth-child(4n+4) {
+  color: #15315d;
+}
+
+.assurances-precision {
+  font-size: 11px;
+  color: #777;
+  text-align: center;
+  line-height: 1.5;
+  margin: 18px 0 0;
+}
+
+/* ============================================
+   GRANDE BANNIÈRE ORIGINALE
+   ============================================ */
 
 .hero {
   min-height: 530px;
@@ -210,31 +398,14 @@ img {
   line-height: 1.55;
 }
 
-
-/* =========================
-   PHOTO PRINCIPALE
-========================= */
-
 .hero-photo {
   position: relative;
-
   background:
-    linear-gradient(
-      #00000010,
-      #00000010
-    ),
-    url(
-      "https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=1400&q=85"
-    );
-
+    linear-gradient(#00000010, #00000010),
+    url("https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=1400&q=85");
   background-size: cover;
   background-position: center;
 }
-
-
-/* =========================
-   BADGE DÉPANNAGE
-========================= */
 
 .badge {
   position: absolute;
@@ -257,10 +428,9 @@ img {
   margin-top: 5px;
 }
 
-
-/* =========================
+/* ============================================
    BOUTONS
-========================= */
+   ============================================ */
 
 .actions {
   display: flex;
@@ -296,10 +466,9 @@ img {
   color: #111;
 }
 
-
-/* =========================
-   SERVICES
-========================= */
+/* ============================================
+   SERVICES ORIGINAUX
+   ============================================ */
 
 .services {
   padding: 25px 3%;
@@ -325,42 +494,24 @@ img {
   background-position: center;
 }
 
-
-/* PHOTOS DES SERVICES */
-
 .plumbing {
-  background-image:
-    url(
-      "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&w=700&q=80"
-    );
+  background-image: url("https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&w=700&q=80");
 }
 
 .heating {
-  background-image:
-    url(
-      "https://images.unsplash.com/photo-1631545806609-12e9e4d9f2b5?auto=format&fit=crop&w=700&q=80"
-    );
+  background-image: url("https://images.unsplash.com/photo-1631545806609-12e9e4d9f2b5?auto=format&fit=crop&w=700&q=80");
 }
 
 .bathroom {
-  background-image:
-    url(
-      "https://images.unsplash.com/photo-1629079447777-1e605162dc8d?auto=format&fit=crop&w=700&q=80"
-    );
+  background-image: url("https://images.unsplash.com/photo-1629079447777-1e605162dc8d?auto=format&fit=crop&w=700&q=80");
 }
 
 .lock {
-  background-image:
-    url(
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=700&q=80"
-    );
+  background-image: url("https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=700&q=80");
 }
 
 .repair {
-  background-image:
-    url(
-      "https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=700&q=80"
-    );
+  background-image: url("https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=700&q=80");
 }
 
 .services i {
@@ -390,10 +541,9 @@ img {
   margin: 7px;
 }
 
-
-/* =========================
-   BANDEAU CONFIANCE
-========================= */
+/* ============================================
+   BANDEAU CONFIANCE ORIGINAL
+   ============================================ */
 
 .trust {
   background: #061b2e;
@@ -431,10 +581,9 @@ img {
   line-height: 1.35;
 }
 
-
-/* =========================
+/* ============================================
    À PROPOS
-========================= */
+   ============================================ */
 
 .about {
   padding: 55px 5%;
@@ -460,10 +609,9 @@ img {
   margin-top: 10px;
 }
 
-
-/* =========================
+/* ============================================
    MOSAÏQUE PHOTOS
-========================= */
+   ============================================ */
 
 .mosaic {
   display: grid;
@@ -480,37 +628,24 @@ img {
 }
 
 .m1 {
-  background-image:
-    url(
-      "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=80"
-    );
+  background-image: url("https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=80");
 }
 
 .m2 {
-  background-image:
-    url(
-      "https://images.unsplash.com/photo-1629079447777-1e605162dc8d?auto=format&fit=crop&w=900&q=80"
-    );
+  background-image: url("https://images.unsplash.com/photo-1629079447777-1e605162dc8d?auto=format&fit=crop&w=900&q=80");
 }
 
 .m3 {
-  background-image:
-    url(
-      "https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=900&q=80"
-    );
+  background-image: url("https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=900&q=80");
 }
 
 .m4 {
-  background-image:
-    url(
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=900&q=80"
-    );
+  background-image: url("https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=900&q=80");
 }
 
-
-/* =========================
+/* ============================================
    RÉALISATIONS
-========================= */
+   ============================================ */
 
 .works {
   padding: 25px 4% 55px;
@@ -537,51 +672,32 @@ img {
 }
 
 .g1 {
-  background-image:
-    url(
-      "https://images.unsplash.com/photo-1629079447777-1e605162dc8d?auto=format&fit=crop&w=700&q=80"
-    );
+  background-image: url("https://images.unsplash.com/photo-1629079447777-1e605162dc8d?auto=format&fit=crop&w=700&q=80");
 }
 
 .g2 {
-  background-image:
-    url(
-      "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=700&q=80"
-    );
+  background-image: url("https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=700&q=80");
 }
 
 .g3 {
-  background-image:
-    url(
-      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=700&q=80"
-    );
+  background-image: url("https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=700&q=80");
 }
 
 .g4 {
-  background-image:
-    url(
-      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=700&q=80"
-    );
+  background-image: url("https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=700&q=80");
 }
 
 .g5 {
-  background-image:
-    url(
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=700&q=80"
-    );
+  background-image: url("https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=700&q=80");
 }
 
 .g6 {
-  background-image:
-    url(
-      "https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=700&q=80"
-    );
+  background-image: url("https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=700&q=80");
 }
 
-
-/* =========================================================
+/* ============================================
    DEMANDE D'INTERVENTION
-========================================================= */
+   ============================================ */
 
 .contact-section {
   background: #f4f4f1;
@@ -643,9 +759,6 @@ img {
 .contact-phone strong {
   font-size: 23px;
 }
-
-
-/* FORMULAIRE BLANC */
 
 .contact-form {
   background: white;
@@ -736,10 +849,9 @@ img {
   margin: 15px 0 0;
 }
 
-
-/* =========================
+/* ============================================
    ZONE INTERVENTION
-========================= */
+   ============================================ */
 
 .zones {
   background: #071b2e;
@@ -766,10 +878,9 @@ img {
   margin: 0;
 }
 
-
-/* =========================
+/* ============================================
    PIED DE PAGE
-========================= */
+   ============================================ */
 
 footer {
   background: #051624;
@@ -799,33 +910,26 @@ footer .brand strong {
   font-size: 27px;
 }
 
-
-/* =========================================================
-   GROS BOUTON URGENCE FLOTTANT
-========================================================= */
+/* ============================================
+   BOUTON URGENCE FLOTTANT
+   ============================================ */
 
 .floating-call {
   position: fixed;
   right: 22px;
   bottom: 22px;
   z-index: 9999;
-
   display: flex;
   align-items: center;
   gap: 14px;
-
   background: #b00020;
   color: white;
-
   padding: 12px 22px 12px 12px;
-
   border: 4px solid #f2c34f;
   border-radius: 60px;
-
   box-shadow:
     0 8px 30px #00000066,
     0 0 0 5px #ffffffcc;
-
   transition: 0.2s;
 }
 
@@ -837,15 +941,11 @@ footer .brand strong {
 .floating-call-icon {
   width: 60px;
   height: 60px;
-
   display: grid;
   place-items: center;
-
   background: #f2c34f;
   color: #071b2e;
-
   border-radius: 50%;
-
   font-size: 30px;
 }
 
@@ -872,10 +972,21 @@ footer .brand strong {
   margin-top: 3px;
 }
 
-
-/* =========================================================
+/* ============================================
    TABLETTE ET MOBILE
-========================================================= */
+   ============================================ */
+
+@media (max-width: 1100px) {
+
+  .confiance-cartes {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .assurances-conteneur {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
 
 @media (max-width: 900px) {
 
@@ -926,6 +1037,14 @@ footer .brand strong {
     margin-left: auto;
   }
 
+  .confiance-cartes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .assurances-conteneur {
+    grid-template-columns: 1fr;
+  }
+
   .hero {
     grid-template-columns: 1fr;
     min-height: 680px;
@@ -941,12 +1060,11 @@ footer .brand strong {
   .hero-copy {
     min-height: 680px;
     padding: 70px 22px;
-    background:
-      linear-gradient(
-        90deg,
-        #061b2ef2,
-        #061b2e70
-      );
+    background: linear-gradient(
+      90deg,
+      #061b2ef2,
+      #061b2e70
+    );
   }
 
   .hero h1 {
@@ -1029,14 +1147,71 @@ footer .brand strong {
   footer > small {
     text-align: center;
   }
+
 }
 
-
-/* =========================
-   PETIT TÉLÉPHONE
-========================= */
-
 @media (max-width: 520px) {
+
+  .confiance-accueil {
+    padding: 35px 15px;
+  }
+
+  .confiance-introduction h2 {
+    font-size: 26px;
+  }
+
+  .confiance-introduction p {
+    font-size: 15px;
+  }
+
+  .confiance-cartes {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .confiance-carte {
+    padding: 30px 22px;
+  }
+
+  .confiance-carte h3 {
+    font-size: 23px;
+  }
+
+  .confiance-carte p {
+    font-size: 16px;
+  }
+
+  .assurances-section {
+    padding: 35px 15px;
+  }
+
+  .assurances-texte h2 {
+    font-size: 27px;
+  }
+
+  .assurances-texte p {
+    font-size: 15px;
+  }
+
+  .assurances-telephone {
+    font-size: 18px;
+    padding: 15px 20px;
+  }
+
+  .assurances-logos {
+    padding: 15px;
+  }
+
+  .assurances-grille {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 7px;
+  }
+
+  .assurance-logo {
+    font-size: 11px;
+    min-height: 52px;
+    padding: 5px;
+  }
 
   .hero h1 {
     font-size: 43px;
@@ -1094,11 +1269,8 @@ footer .brand strong {
     left: 12px;
     right: 12px;
     bottom: 12px;
-
     justify-content: center;
-
     padding: 9px 14px;
-
     border-width: 3px;
   }
 
@@ -1107,10 +1279,6 @@ footer .brand strong {
     height: 48px;
     min-width: 48px;
     font-size: 24px;
-  }
-
-  .floating-call-text {
-    display: flex;
   }
 
   .floating-call-text small {
@@ -1124,151 +1292,258 @@ footer .brand strong {
   .floating-call-text b {
     font-size: 10px;
   }
+
 }
-
-
-/* AJOUT : BLOC CONFIANCE ORIGINAL DUVAL */
-.duval-reassurance{background:#f7f8fa;padding:38px 4% 45px;text-align:center}
-.duval-reassurance h2{font-family:Georgia,serif;color:#103b5b;font-size:clamp(26px,3vw,38px);margin:0}
-.duval-reassurance .duval-intro{color:#555;margin:15px 0 27px}
-.duval-reassurance .duval-rule{height:4px;width:55px;background:#b40021;margin:12px auto}
-.duval-benefits{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px;max-width:1350px;margin:auto}
-.duval-benefit{background:#fff;box-shadow:0 5px 18px #00000012;border-radius:9px;padding:26px 15px;min-width:0}
-.duval-benefit .duval-symbol{width:74px;height:74px;border-radius:50%;background:#fae9eb;color:#b00020;display:grid;place-items:center;margin:0 auto 18px;font-size:36px}
-.duval-benefit h3{font-size:19px;color:#103b5b;margin:0 0 15px}
-.duval-benefit p{font-size:15px;color:#505050;line-height:1.6;margin:0}
-.duval-insurance{background:#eaf2f8;padding:38px 5%;display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
-.duval-insurance h2{color:#103b5b;font-family:Georgia,serif;font-size:clamp(27px,3vw,40px);margin:0 0 20px}
-.duval-insurance p{color:#454545;line-height:1.7;font-size:17px}
-.duval-insurance a{display:inline-block;margin-top:10px;padding:15px 24px;background:#b00020;color:white;border-radius:40px;font-weight:bold}
-.duval-insurance .duval-insurance-art{background:white;border-radius:14px;padding:25px;min-height:210px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;color:#103b5b;text-align:center;box-shadow:0 4px 20px #0000000e}
-.duval-insurance-art strong{font-size:24px}
-.duval-insurance-art .duval-insurance-icons{display:flex;gap:20px;font-size:35px;color:#b00020}
-@media(max-width:1050px){.duval-benefits{grid-template-columns:repeat(3,minmax(0,1fr))}}
-@media(max-width:650px){.duval-benefits{grid-template-columns:1fr}.duval-insurance{grid-template-columns:1fr}.duval-reassurance{padding:30px 5%}.duval-benefit{padding:28px 22px}}
 
 </style>
 
 </head>
 
-
 <body>
 
-
-<!-- =====================================================
-     MENU
-===================================================== -->
+<!-- ============================================
+     MENU ORIGINAL
+     ============================================ -->
 
 <header class="topbar">
 
-  <a
-    class="brand"
-    href="#accueil"
-    aria-label="Duval Père et Fils"
-  >
+  <a class="brand" href="#accueil" aria-label="Duval Père et Fils">
 
-    <span class="crest">
-      ♜
-    </span>
+    <span class="crest">♜</span>
 
     <span>
-
-      <strong>
-        DUVAL
-      </strong>
-
-      <b>
-        PÈRE ET FILS
-      </b>
-
-      <small>
-        ARTISANS EN NORMANDIE
-      </small>
-
+      <strong>DUVAL</strong>
+      <b>PÈRE ET FILS</b>
+      <small>ARTISANS EN NORMANDIE</small>
     </span>
 
   </a>
 
-
-  <button
-    class="menu"
-    aria-label="Ouvrir le menu"
-  >
+  <button class="menu" aria-label="Ouvrir le menu" aria-expanded="false">
     ☰
   </button>
 
-
   <nav>
 
-    <a href="#accueil">
-      Accueil
-    </a>
+    <a href="#accueil">Accueil</a>
 
-    <a href="#services">
-      Nos services
-    </a>
+    <a href="#services">Nos services</a>
 
-    <a href="zones-desservies.html">
-      📍 Zones desservies
-    </a>
+    <a href="zones-desservies.html">📍 Zones desservies</a>
 
-    <a href="#realisations">
-      Réalisations
-    </a>
+    <a href="#realisations">Réalisations</a>
 
-    <a href="#apropos">
-      À propos
-    </a>
+    <a href="#apropos">À propos</a>
 
-    <a href="#contact">
-      Contact
-    </a>
+    <a href="#contact">Contact</a>
 
   </nav>
 
-
-  <a
-    class="phone"
-    href="tel:+33756835902"
-  >
-    ☎ &nbsp;
-    07 56 83 59 02
+  <a class="phone" href="tel:+33756835902">
+    ☎ &nbsp; 07 56 83 59 02
   </a>
 
 </header>
 
-
-
 <main>
 
-<!-- AJOUT : POURQUOI NOUS FAIRE CONFIANCE -->
-<section class="duval-reassurance" aria-labelledby="duval-trust-title">
-  <h2 id="duval-trust-title">POURQUOI NOUS FAIRE CONFIANCE ?</h2>
-  <div class="duval-rule" aria-hidden="true"></div>
-  <p class="duval-intro">Un service professionnel, réactif et transparent pour tous vos besoins.</p>
-  <div class="duval-benefits">
-    <article class="duval-benefit"><span class="duval-symbol" aria-hidden="true">♜</span><h3>Artisan Plombier</h3><p>Intervention pour vos demandes de plomberie, débouchage, recherche de fuite et ballon d'eau chaude.</p></article>
-    <article class="duval-benefit"><span class="duval-symbol" aria-hidden="true">★</span><h3>Expérience</h3><p>Artisan Plombier depuis 2000</p></article>
-    <article class="duval-benefit"><span class="duval-symbol" aria-hidden="true">€</span><h3>Tarifs compétitifs &amp; transparents</h3><p>Un devis clair avant les travaux, sans mauvaise surprise.</p></article>
-    <article class="duval-benefit"><span class="duval-symbol" aria-hidden="true">✓</span><h3>Travail soigné</h3><p>Une attention particulière à la qualité de nos interventions et de nos finitions.</p></article>
-    <article class="duval-benefit"><span class="duval-symbol" aria-hidden="true">✦</span><h3>Accompagnement assurances</h3><p>Nous vous aidons à préparer les informations utiles pour votre assureur en cas de sinistre.</p></article>
+<!-- ============================================
+     NOUVEAU BLOC DE CONFIANCE
+     ============================================ -->
+
+<section class="confiance-accueil" id="confiance">
+
+  <div class="confiance-introduction">
+
+    <h2>
+      POURQUOI NOUS FAIRE CONFIANCE ?
+    </h2>
+
+    <p>
+      Duval Père et Fils, un savoir-faire artisanal
+      au service de votre confort et de votre sécurité.
+      Nous vous accompagnons avec sérieux, réactivité
+      et transparence pour tous vos travaux.
+    </p>
+
   </div>
+
+  <div class="confiance-cartes">
+
+    <article class="confiance-carte">
+
+      <div class="confiance-icone">👷</div>
+
+      <h3>Artisan Plombier</h3>
+
+      <p>
+        Votre artisan plombier intervient rapidement
+        pour vos demandes de dépannage, débouchage,
+        recherche de fuite, installation et réparation
+        de ballon d'eau chaude.
+      </p>
+
+    </article>
+
+    <article class="confiance-carte">
+
+      <div class="confiance-icone">🛡</div>
+
+      <h3>Expérience</h3>
+
+      <p>
+        Artisan Plombier depuis 2000.
+      </p>
+
+    </article>
+
+    <article class="confiance-carte">
+
+      <div class="confiance-icone">€</div>
+
+      <h3>Tarifs transparents</h3>
+
+      <p>
+        Le devis est établi en toute transparence
+        et sans engagement, avant l'exécution
+        des travaux, pour éviter les mauvaises surprises.
+      </p>
+
+    </article>
+
+    <article class="confiance-carte">
+
+      <div class="confiance-icone">✓</div>
+
+      <h3>Travail soigné</h3>
+
+      <p>
+        Bénéficiez d'un travail de qualité
+        et de finitions soignées grâce
+        à notre savoir-faire et notre expérience.
+      </p>
+
+    </article>
+
+    <article class="confiance-carte">
+
+      <div class="confiance-icone">🤝</div>
+
+      <h3>Accompagnement assurances</h3>
+
+      <p>
+        Nous vous accompagnons dans vos démarches
+        auprès de votre assureur et vous aidons
+        à préparer les informations utiles
+        à votre déclaration de sinistre.
+      </p>
+
+    </article>
+
+  </div>
+
 </section>
-<section class="duval-insurance" aria-label="Assurances et sinistres">
-  <div><h2>ASSURANCES &amp; SINISTRES</h2><p>Un dégât des eaux ou un sinistre ? Nous pouvons vous accompagner dans la préparation de votre déclaration et des documents nécessaires.</p><p>La prise en charge et les remboursements dépendent de votre contrat et de la décision de votre assureur.</p><a href="tel:+33756835902">☎ 07 56 83 59 02</a></div>
-  <div class="duval-insurance-art"><div class="duval-insurance-icons" aria-hidden="true"><span>🛡</span><span>✓</span><span>📄</span></div><strong>Vos démarches, simplifiées</strong><span>Intervention • Devis • Documents pour votre assurance</span></div>
+
+<!-- ============================================
+     NOUVELLE SECTION ASSURANCES
+     ============================================ -->
+
+<section class="assurances-section" id="assurances">
+
+  <div class="assurances-conteneur">
+
+    <div class="assurances-texte">
+
+      <h2>
+        VOS TRAVAUX ET
+        <span>ASSURANCES</span>
+      </h2>
+
+      <p>
+        Chez Duval Père et Fils, nous savons
+        qu'un dégât des eaux ou un sinistre
+        peut être une situation stressante.
+      </p>
+
+      <p>
+        Notre équipe vous accompagne dans
+        les démarches liées à votre intervention
+        et peut vous aider à réunir les éléments
+        nécessaires à votre dossier d'assurance.
+      </p>
+
+      <p>
+        Nous privilégions des devis clairs,
+        des tarifs transparents et un travail soigné.
+        La prise en charge éventuelle des travaux
+        dépend des garanties de votre contrat
+        et de la décision de votre assureur.
+      </p>
+
+      <a class="assurances-telephone" href="tel:+33756835902">
+        ☎ 07 56 83 59 02
+      </a>
+
+    </div>
+
+    <div class="assurances-logos">
+
+      <h3>
+        Principales compagnies d'assurance
+      </h3>
+
+      <div class="assurances-grille">
+
+        <div class="assurance-logo">AXA</div>
+        <div class="assurance-logo">Allianz</div>
+        <div class="assurance-logo">MAAF</div>
+        <div class="assurance-logo">MACIF</div>
+
+        <div class="assurance-logo">Generali</div>
+        <div class="assurance-logo">Matmut</div>
+        <div class="assurance-logo">Groupama</div>
+        <div class="assurance-logo">Swiss Life</div>
+
+        <div class="assurance-logo">April</div>
+        <div class="assurance-logo">GMF</div>
+        <div class="assurance-logo">MGEN</div>
+        <div class="assurance-logo">AG2R</div>
+
+        <div class="assurance-logo">CNP</div>
+        <div class="assurance-logo">Covéa</div>
+        <div class="assurance-logo">Alptis</div>
+        <div class="assurance-logo">Sogessur</div>
+
+        <div class="assurance-logo">BPCE</div>
+        <div class="assurance-logo">MMA</div>
+        <div class="assurance-logo">SMABTP</div>
+        <div class="assurance-logo">AIG</div>
+
+        <div class="assurance-logo">Luko</div>
+        <div class="assurance-logo">Amaguiz</div>
+        <div class="assurance-logo">Aviva</div>
+        <div class="assurance-logo">La Médicale</div>
+
+      </div>
+
+      <p class="assurances-precision">
+        Présentation illustrative de compagnies
+        d'assurance. Leur présence ne constitue
+        pas une attestation de partenariat ou
+        d'agrément de Duval Père et Fils.
+      </p>
+
+    </div>
+
+  </div>
+
 </section>
 
+<!-- ============================================
+     ACCUEIL ORIGINAL
+     ============================================ -->
 
-
-<!-- =====================================================
-     ACCUEIL
-===================================================== -->
-
-<section
-  class="hero"
-  id="accueil"
->
+<section class="hero" id="accueil">
 
   <div class="hero-copy">
 
@@ -1279,9 +1554,7 @@ footer .brand strong {
     <h1>
       DUVAL
       <br>
-      <em>
-        PÈRE ET FILS
-      </em>
+      <em>PÈRE ET FILS</em>
     </h1>
 
     <h2>
@@ -1298,38 +1571,25 @@ footer .brand strong {
 
     <div class="actions">
 
-      <a
-        class="btn red"
-        href="tel:+33756835902"
-      >
-        ☎ &nbsp;
-        Nous appeler →
+      <a class="btn red" href="tel:+33756835902">
+        ☎ &nbsp; Nous appeler →
       </a>
 
-      <a
-        class="btn outline"
-        href="#contact"
-      >
-        📝 &nbsp;
-        Demande d’intervention →
+      <a class="btn outline" href="#contact">
+        📝 &nbsp; Demande d’intervention →
       </a>
 
     </div>
 
   </div>
 
-
   <div class="hero-photo">
 
     <div class="badge">
 
-      <b>
-        ✓ DÉPANNAGE RAPIDE
-      </b>
+      <b>✓ DÉPANNAGE RAPIDE</b>
 
-      <small>
-        7j/7 selon urgence
-      </small>
+      <small>7j/7 selon urgence</small>
 
     </div>
 
@@ -1337,16 +1597,11 @@ footer .brand strong {
 
 </section>
 
+<!-- ============================================
+     SERVICES ORIGINAUX
+     ============================================ -->
 
-
-<!-- =====================================================
-     SERVICES
-===================================================== -->
-
-<section
-  class="services"
-  id="services"
->
+<section class="services" id="services">
 
   <article>
 
@@ -1354,9 +1609,7 @@ footer .brand strong {
 
     <i>💧</i>
 
-    <h3>
-      PLOMBERIE
-    </h3>
+    <h3>PLOMBERIE</h3>
 
     <p>
       Installation, réparation,
@@ -1366,16 +1619,13 @@ footer .brand strong {
 
   </article>
 
-
   <article>
 
     <div class="pic heating"></div>
 
     <i>♨</i>
 
-    <h3>
-      CHAUFFAGE
-    </h3>
+    <h3>CHAUFFAGE</h3>
 
     <p>
       Installation, entretien
@@ -1385,16 +1635,13 @@ footer .brand strong {
 
   </article>
 
-
   <article>
 
     <div class="pic bathroom"></div>
 
     <i>🛁</i>
 
-    <h3>
-      SALLE DE BAINS
-    </h3>
+    <h3>SALLE DE BAINS</h3>
 
     <p>
       Création, rénovation
@@ -1404,16 +1651,13 @@ footer .brand strong {
 
   </article>
 
-
   <article>
 
     <div class="pic lock"></div>
 
     <i>🔑</i>
 
-    <h3>
-      SERRURERIE
-    </h3>
+    <h3>SERRURERIE</h3>
 
     <p>
       Ouverture de porte,
@@ -1423,16 +1667,13 @@ footer .brand strong {
 
   </article>
 
-
   <article>
 
     <div class="pic repair"></div>
 
     <i>🔧</i>
 
-    <h3>
-      DÉPANNAGE
-    </h3>
+    <h3>DÉPANNAGE</h3>
 
     <p>
       Intervention rapide
@@ -1444,11 +1685,9 @@ footer .brand strong {
 
 </section>
 
-
-
-<!-- =====================================================
-     NOS ENGAGEMENTS
-===================================================== -->
+<!-- ============================================
+     NOS ENGAGEMENTS ORIGINAUX
+     ============================================ -->
 
 <section class="trust">
 
@@ -1457,88 +1696,52 @@ footer .brand strong {
     🛡️
 
     <span>
-
-      <b>
-        Travail soigné
-      </b>
-
-      <small>
-        Qualité et finitions professionnelles
-      </small>
-
+      <b>Travail soigné</b>
+      <small>Qualité et finitions professionnelles</small>
     </span>
 
   </div>
-
 
   <div>
 
     👥
 
     <span>
-
-      <b>
-        Entreprise familiale
-      </b>
-
-      <small>
-        Duval Père et Fils à votre service
-      </small>
-
+      <b>Entreprise familiale</b>
+      <small>Duval Père et Fils à votre service</small>
     </span>
 
   </div>
-
 
   <div>
 
     📍
 
     <span>
-
-      <b>
-        Proximité
-      </b>
-
-      <small>
-        Intervention en Normandie et alentours
-      </small>
-
+      <b>Proximité</b>
+      <small>Intervention en Normandie et alentours</small>
     </span>
 
   </div>
-
 
   <div>
 
     🕘
 
     <span>
-
-      <b>
-        Réactivité
-      </b>
-
-      <small>
-        Dépannage rapide selon urgence
-      </small>
-
+      <b>Réactivité</b>
+      <small>Dépannage rapide selon urgence</small>
     </span>
 
   </div>
 
 </section>
 
+<!-- ============================================
+     À PROPOS ORIGINAL
+     ============================================ -->
 
-
-<!-- =====================================================
-     À PROPOS
-===================================================== -->
-
-<section
-  class="about"
-  id="apropos"
->
+<section class="about" id="apropos">
 
   <div class="about-copy">
 
@@ -1563,40 +1766,28 @@ footer .brand strong {
       un travail sérieux, durable et soigné.
     </p>
 
-    <a
-      class="btn red"
-      href="#contact"
-    >
+    <a class="btn red" href="#contact">
       Nous contacter →
     </a>
 
   </div>
 
-
   <div class="mosaic">
 
     <div class="m1"></div>
-
     <div class="m2"></div>
-
     <div class="m3"></div>
-
     <div class="m4"></div>
 
   </div>
 
 </section>
 
+<!-- ============================================
+     RÉALISATIONS ORIGINALES
+     ============================================ -->
 
-
-<!-- =====================================================
-     RÉALISATIONS
-===================================================== -->
-
-<section
-  class="works"
-  id="realisations"
->
+<section class="works" id="realisations">
 
   <h2>
     Nos dernières réalisations
@@ -1605,31 +1796,21 @@ footer .brand strong {
   <div class="gallery">
 
     <div class="g1"></div>
-
     <div class="g2"></div>
-
     <div class="g3"></div>
-
     <div class="g4"></div>
-
     <div class="g5"></div>
-
     <div class="g6"></div>
 
   </div>
 
 </section>
 
+<!-- ============================================
+     DEMANDE D'INTERVENTION ORIGINALE
+     ============================================ -->
 
-
-<!-- =====================================================
-     DEMANDE D'INTERVENTION
-===================================================== -->
-
-<section
-  class="contact-section"
-  id="contact"
->
+<section class="contact-section" id="contact">
 
   <div class="contact-intro">
 
@@ -1654,11 +1835,7 @@ footer .brand strong {
       directement par SMS.
     </p>
 
-
-    <a
-      class="contact-phone"
-      href="tel:+33756835902"
-    >
+    <a class="contact-phone" href="tel:+33756835902">
 
       <span class="contact-phone-icon">
         ☎
@@ -1680,15 +1857,9 @@ footer .brand strong {
 
   </div>
 
+  <!-- FORMULAIRE ORIGINAL -->
 
-
-  <!-- FORMULAIRE -->
-
-
-  <form
-    class="contact-form"
-    id="interventionForm"
-  >
+  <form class="contact-form" id="interventionForm">
 
     <div class="form-title">
 
@@ -1703,9 +1874,7 @@ footer .brand strong {
 
     </div>
 
-
     <div class="form-grid">
-
 
       <div class="form-field">
 
@@ -1724,7 +1893,6 @@ footer .brand strong {
 
       </div>
 
-
       <div class="form-field">
 
         <label for="prenom">
@@ -1742,7 +1910,6 @@ footer .brand strong {
 
       </div>
 
-
       <div class="form-field">
 
         <label for="telephone">
@@ -1759,7 +1926,6 @@ footer .brand strong {
         >
 
       </div>
-
 
       <div class="form-field">
 
@@ -1811,7 +1977,6 @@ footer .brand strong {
 
     </div>
 
-
     <div class="form-field">
 
       <label for="adresse">
@@ -1829,7 +1994,6 @@ footer .brand strong {
 
     </div>
 
-
     <div class="form-field">
 
       <label for="message">
@@ -1846,14 +2010,12 @@ footer .brand strong {
 
     </div>
 
-
     <button
       type="submit"
       class="form-submit"
     >
       📱 Envoyer ma demande d’intervention
     </button>
-
 
     <p class="form-info">
       Après avoir cliqué sur le bouton,
@@ -1866,11 +2028,9 @@ footer .brand strong {
 
 </section>
 
-
-
-<!-- =====================================================
-     ZONE D'INTERVENTION
-===================================================== -->
+<!-- ============================================
+     ZONE D'INTERVENTION ORIGINALE
+     ============================================ -->
 
 <section class="zones">
 
@@ -1891,7 +2051,6 @@ footer .brand strong {
 
   </div>
 
-
   <div>
 
     <h3>
@@ -1909,14 +2068,11 @@ footer .brand strong {
 
 </section>
 
-
 </main>
 
-
-
-<!-- =====================================================
-     PIED DE PAGE
-===================================================== -->
+<!-- ============================================
+     PIED DE PAGE ORIGINAL
+     ============================================ -->
 
 <footer>
 
@@ -1944,35 +2100,21 @@ footer .brand strong {
 
   </div>
 
-
   <nav>
 
-    <a href="#accueil">
-      Accueil
-    </a>
+    <a href="#accueil">Accueil</a>
 
-    <a href="#services">
-      Nos services
-    </a>
+    <a href="#services">Nos services</a>
 
-    <a href="zones-desservies.html">
-      📍 Zones desservies
-    </a>
+    <a href="zones-desservies.html">📍 Zones desservies</a>
 
-    <a href="#realisations">
-      Réalisations
-    </a>
+    <a href="#realisations">Réalisations</a>
 
-    <a href="#apropos">
-      À propos
-    </a>
+    <a href="#apropos">À propos</a>
 
-    <a href="#contact">
-      Contact
-    </a>
+    <a href="#contact">Contact</a>
 
   </nav>
-
 
   <small>
     © 2026 Duval Père et Fils
@@ -1982,11 +2124,9 @@ footer .brand strong {
 
 </footer>
 
-
-
-<!-- =====================================================
-     GROS BOUTON TÉLÉPHONE URGENCE
-===================================================== -->
+<!-- ============================================
+     BOUTON TÉLÉPHONE URGENCE ORIGINAL
+     ============================================ -->
 
 <a
   href="tel:+33756835902"
@@ -2016,18 +2156,15 @@ footer .brand strong {
 
 </a>
 
-
-
-<!-- =====================================================
-     JAVASCRIPT
-===================================================== -->
+<!-- ============================================
+     JAVASCRIPT ORIGINAL
+     ============================================ -->
 
 <script>
 
-
-/* =========================
+/* ============================================
    MENU MOBILE
-========================= */
+   ============================================ */
 
 const menu =
   document.querySelector(".menu");
@@ -2041,9 +2178,13 @@ menu.addEventListener(
 
     nav.classList.toggle("open");
 
+    menu.setAttribute(
+      "aria-expanded",
+      nav.classList.contains("open")
+    );
+
   }
 );
-
 
 document
   .querySelectorAll(".topbar nav a")
@@ -2055,27 +2196,25 @@ document
 
         nav.classList.remove("open");
 
+        menu.setAttribute("aria-expanded", "false");
+
       }
     );
 
   });
 
-
-
-/* =========================================================
+/* ============================================
    DEMANDE D'INTERVENTION PAR SMS
-========================================================= */
+   ============================================ */
 
 const interventionForm =
   document.querySelector("#interventionForm");
-
 
 interventionForm.addEventListener(
   "submit",
   function (event) {
 
     event.preventDefault();
-
 
     const nom =
       document.querySelector("#nom").value.trim();
@@ -2095,7 +2234,6 @@ interventionForm.addEventListener(
     const message =
       document.querySelector("#message").value.trim();
 
-
     const contenu =
 `DEMANDE D'INTERVENTION - DUVAL PÈRE ET FILS
 
@@ -2112,17 +2250,13 @@ Type d'intervention : ${service}
 Description de l'intervention :
 ${message}`;
 
-
     const numero =
       "33756835902";
-
 
     const appareilApple =
       /iPad|iPhone|iPod/.test(navigator.userAgent);
 
-
     let lienSMS;
-
 
     if (appareilApple) {
 
@@ -2142,16 +2276,13 @@ ${message}`;
 
     }
 
-
     window.location.href =
       lienSMS;
 
   }
 );
 
-
 </script>
-
 
 </body>
 
