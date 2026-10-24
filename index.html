@@ -1126,6 +1126,27 @@ footer .brand strong {
   }
 }
 
+
+/* AJOUT : BLOC CONFIANCE ORIGINAL DUVAL */
+.duval-reassurance{background:#f7f8fa;padding:38px 4% 45px;text-align:center}
+.duval-reassurance h2{font-family:Georgia,serif;color:#103b5b;font-size:clamp(26px,3vw,38px);margin:0}
+.duval-reassurance .duval-intro{color:#555;margin:15px 0 27px}
+.duval-reassurance .duval-rule{height:4px;width:55px;background:#b40021;margin:12px auto}
+.duval-benefits{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px;max-width:1350px;margin:auto}
+.duval-benefit{background:#fff;box-shadow:0 5px 18px #00000012;border-radius:9px;padding:26px 15px;min-width:0}
+.duval-benefit .duval-symbol{width:74px;height:74px;border-radius:50%;background:#fae9eb;color:#b00020;display:grid;place-items:center;margin:0 auto 18px;font-size:36px}
+.duval-benefit h3{font-size:19px;color:#103b5b;margin:0 0 15px}
+.duval-benefit p{font-size:15px;color:#505050;line-height:1.6;margin:0}
+.duval-insurance{background:#eaf2f8;padding:38px 5%;display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
+.duval-insurance h2{color:#103b5b;font-family:Georgia,serif;font-size:clamp(27px,3vw,40px);margin:0 0 20px}
+.duval-insurance p{color:#454545;line-height:1.7;font-size:17px}
+.duval-insurance a{display:inline-block;margin-top:10px;padding:15px 24px;background:#b00020;color:white;border-radius:40px;font-weight:bold}
+.duval-insurance .duval-insurance-art{background:white;border-radius:14px;padding:25px;min-height:210px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;color:#103b5b;text-align:center;box-shadow:0 4px 20px #0000000e}
+.duval-insurance-art strong{font-size:24px}
+.duval-insurance-art .duval-insurance-icons{display:flex;gap:20px;font-size:35px;color:#b00020}
+@media(max-width:1050px){.duval-benefits{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:650px){.duval-benefits{grid-template-columns:1fr}.duval-insurance{grid-template-columns:1fr}.duval-reassurance{padding:30px 5%}.duval-benefit{padding:28px 22px}}
+
 </style>
 
 </head>
@@ -1219,6 +1240,25 @@ footer .brand strong {
 
 
 <main>
+
+<!-- AJOUT : POURQUOI NOUS FAIRE CONFIANCE -->
+<section class="duval-reassurance" aria-labelledby="duval-trust-title">
+  <h2 id="duval-trust-title">POURQUOI NOUS FAIRE CONFIANCE ?</h2>
+  <div class="duval-rule" aria-hidden="true"></div>
+  <p class="duval-intro">Un service professionnel, réactif et transparent pour tous vos besoins.</p>
+  <div class="duval-benefits">
+    <article class="duval-benefit"><span class="duval-symbol" aria-hidden="true">♜</span><h3>Artisan Plombier</h3><p>Intervention pour vos demandes de plomberie, débouchage, recherche de fuite et ballon d'eau chaude.</p></article>
+    <article class="duval-benefit"><span class="duval-symbol" aria-hidden="true">★</span><h3>Expérience</h3><p>Artisan Plombier depuis 2000</p></article>
+    <article class="duval-benefit"><span class="duval-symbol" aria-hidden="true">€</span><h3>Tarifs compétitifs &amp; transparents</h3><p>Un devis clair avant les travaux, sans mauvaise surprise.</p></article>
+    <article class="duval-benefit"><span class="duval-symbol" aria-hidden="true">✓</span><h3>Travail soigné</h3><p>Une attention particulière à la qualité de nos interventions et de nos finitions.</p></article>
+    <article class="duval-benefit"><span class="duval-symbol" aria-hidden="true">✦</span><h3>Accompagnement assurances</h3><p>Nous vous aidons à préparer les informations utiles pour votre assureur en cas de sinistre.</p></article>
+  </div>
+</section>
+<section class="duval-insurance" aria-label="Assurances et sinistres">
+  <div><h2>ASSURANCES &amp; SINISTRES</h2><p>Un dégât des eaux ou un sinistre ? Nous pouvons vous accompagner dans la préparation de votre déclaration et des documents nécessaires.</p><p>La prise en charge et les remboursements dépendent de votre contrat et de la décision de votre assureur.</p><a href="tel:+33756835902">☎ 07 56 83 59 02</a></div>
+  <div class="duval-insurance-art"><div class="duval-insurance-icons" aria-hidden="true"><span>🛡</span><span>✓</span><span>📄</span></div><strong>Vos démarches, simplifiées</strong><span>Intervention • Devis • Documents pour votre assurance</span></div>
+</section>
+
 
 
 <!-- =====================================================
