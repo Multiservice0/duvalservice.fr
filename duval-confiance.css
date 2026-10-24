@@ -1,0 +1,41 @@
+/* ===== ÉDITION SIGNATURE : AJOUT SANS RETIRER LE SITE D'ORIGINE ===== */
+:root{--duval-navy:#071d32;--duval-gold:#d5a94d;--duval-red:#a70928;--duval-ink:#112a40}
+.signature-intro{position:relative;isolation:isolate;overflow:hidden;color:white;background:#071d32;padding:94px 5% 76px}
+.signature-intro:before{content:"";position:absolute;inset:0;z-index:-2;background:url('https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=1800&q=85') center 53%/cover no-repeat;filter:saturate(.8)}
+.signature-intro:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(95deg,rgba(4,22,38,.97) 3%,rgba(5,24,42,.88) 48%,rgba(5,24,42,.52) 100%)}
+.signature-wrap{max-width:1190px;margin:auto}
+.signature-kicker{display:inline-flex;align-items:center;gap:12px;color:#f3cf83;text-transform:uppercase;font-size:12px;font-weight:800;letter-spacing:3px}
+.signature-kicker:before{content:"";display:block;width:35px;height:2px;background:var(--duval-gold)}
+.signature-intro h2{font:normal clamp(39px,5.2vw,72px)/1.06 Georgia,serif;max-width:940px;margin:23px 0 22px;letter-spacing:-1.7px}
+.signature-intro h2 em{font-style:normal;color:#eac376}
+.signature-lead{font-size:clamp(16px,1.6vw,20px);line-height:1.8;color:#e4eaf0;max-width:730px;margin:0 0 30px}
+.signature-cta{display:flex;gap:13px;flex-wrap:wrap;margin-bottom:66px}
+.signature-cta a{display:inline-flex;align-items:center;justify-content:center;padding:15px 23px;border-radius:100px;font-weight:750;font-size:14px;transition:transform .2s}
+.signature-cta a:hover{transform:translateY(-3px)}
+.signature-cta a:first-child{background:var(--duval-red);border:1px solid #e3b762;color:#fff}
+.signature-cta a:last-child{border:1px solid #d7c9ac;color:#fff;background:#ffffff10}
+.signature-heading{text-align:center;margin:0 auto 28px}
+.signature-heading span{color:#eac376;text-transform:uppercase;letter-spacing:2.8px;font-size:11px;font-weight:800}
+.signature-heading h3{font:normal clamp(29px,3.6vw,46px)/1.16 Georgia,serif;margin:10px 0 12px;color:#fff}
+.signature-heading p{color:#d9e1e8;line-height:1.6;margin:0}
+.signature-cards{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:15px}
+.signature-card{background:#fff;color:#182e40;border-radius:14px;padding:27px 19px 24px;box-shadow:0 18px 42px #0004;border-top:3px solid #d8ad58;min-height:225px;text-align:center;transition:transform .2s,box-shadow .2s}
+.signature-card:hover{transform:translateY(-5px);box-shadow:0 22px 50px #0006}
+.signature-icon{width:64px;height:64px;border-radius:50%;background:#fff0f1;display:grid;place-items:center;margin:0 auto 17px;color:#a70928}
+.signature-icon svg{width:30px;height:30px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.signature-card h4{font-size:16px;margin:0 0 10px;color:#102b45}
+.signature-card p{font-size:13px;line-height:1.65;margin:0;color:#566474}
+.insurance-showcase{max-width:1190px;margin:0 auto;padding:68px 5% 74px}
+.insurance-panel{border-radius:20px;background:linear-gradient(115deg,#eaf1f7,#f8fafc);box-shadow:0 16px 48px #091d3320;display:grid;grid-template-columns:minmax(240px,.85fr) minmax(0,1.35fr);gap:36px;align-items:center;padding:38px;border:1px solid #dbe4ec}
+.insurance-copy .mini{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#9b1730;font-weight:800}
+.insurance-copy h2{font:normal clamp(28px,3vw,41px)/1.15 Georgia,serif;color:#0a2842;margin:12px 0 16px}
+.insurance-copy h2 strong{color:#a70928;font-weight:normal}
+.insurance-copy p{line-height:1.75;color:#465b6b;font-size:15px}
+.insurance-copy a{display:inline-flex;align-items:center;justify-content:center;border-radius:50px;background:#a70928;color:white;padding:14px 23px;font-weight:700;margin-top:12px}
+.insurance-logo-frame{background:#fff;border:1px solid #e2e9ee;border-radius:14px;padding:16px;box-shadow:0 10px 25px #0a25401a}
+.insurance-logo-frame img{width:100%;height:auto;display:block}
+.insurance-note{font-size:12px!important;color:#667786!important;line-height:1.6!important;margin-top:17px}
+@media(max-width:1050px){.signature-cards{grid-template-columns:repeat(3,minmax(0,1fr))}.signature-card{min-height:205px}}
+@media(max-width:720px){.signature-intro{padding:63px 19px 55px}.signature-intro:after{background:linear-gradient(95deg,#061b2ef2,#061b2ed9)}.signature-intro h2{letter-spacing:-.8px}.signature-cta{margin-bottom:50px}.signature-cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.signature-card{padding:22px 12px;min-height:215px}.signature-card:last-child{grid-column:1/-1;min-height:0}.signature-card h4{font-size:14px}.signature-card p{font-size:12px}.signature-icon{width:54px;height:54px}.insurance-showcase{padding:42px 15px}.insurance-panel{grid-template-columns:1fr;gap:20px;padding:23px}.insurance-logo-frame{padding:7px}}
+@media(max-width:370px){.signature-cards{grid-template-columns:1fr}.signature-card:last-child{grid-column:auto}.signature-card{min-height:0}.signature-cta a{width:100%}}
+
